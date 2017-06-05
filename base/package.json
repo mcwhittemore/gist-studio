@@ -1,0 +1,9 @@
+{
+  "public": false,
+  "dependencies": {
+    "palimpsest": "^1.0.0",
+    "image-dicer": "^1.0.0",
+    "equilateral-reproduction": "^1.0.0",
+    "ndarray": "^1.0.18"
+  }
+}

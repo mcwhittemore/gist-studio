@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "gh-got": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "gist-studio": "./cli.js"
+  },
+  "author": "Matthew Chase Whittemore",
+  "license": "MIT"
+}
