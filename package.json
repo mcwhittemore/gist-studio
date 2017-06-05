@@ -10,5 +10,22 @@
     "gist-studio": "./cli.js"
   },
   "author": "Matthew Chase Whittemore",
-  "license": "MIT"
+  "license": "MIT",
+  "name": "gist-studio",
+  "description": "A cli to create gists designed for creating images",
+  "version": "1.0.0",
+  "main": "cli.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcwhittemore/gist-studio.git"
+  },
+  "keywords": [
+    "art",
+    "gist",
+    "github"
+  ],
+  "bugs": {
+    "url": "https://github.com/mcwhittemore/gist-studio/issues"
+  },
+  "homepage": "https://github.com/mcwhittemore/gist-studio#readme"
 }
