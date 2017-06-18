@@ -1,4 +1,4 @@
-var newStudio = require('./cmds/new');
+#!/usr/bin/env node
 
 try {
   var cmd = require(`./cmds/${process.argv[2]}`);

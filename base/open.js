@@ -1,9 +1,10 @@
 var palimpsest = require('palimpsest');
 
-module.exports = function(files) {
+module.exports = async function open(files) {
   if (typeof files === 'string') {
-    return palimpsest.open([files])[0];
+    var out = await palimpsest.open([files]);
+    return out[0];
   }
-  return palimpsest.open(files);
+  return await palimpsest.open(files);
 };
 

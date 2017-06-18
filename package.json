@@ -1,5 +1,7 @@
 {
   "dependencies": {
+    "equilateral-reproduction": "^1.0.1",
+    "express": "^4.15.3",
     "gh-got": "^5.0.0"
   },
   "devDependencies": {},

@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <div id="svg"></div>
+
+    <script>
+      var svgDiv = document.getElementById('svg');
+
+      var running = false;
+
+      load(0);
+
+      function load(start) {
+        if (running) return;
+        running = true;
+        var oReq = new XMLHttpRequest();
+        oReq.addEventListener("load", loaded);
+        oReq.open("GET", "http://localhost:4000/svg?start="+start);
+        oReq.send();
+        console.log(start);
+      };
+
+      function loaded() {
+        svgDiv.innerHTML = this.responseText;
+        var svg = svgDiv.children[0];
+        svg.setAttribute('width', '100%');
+        svg.setAttribute('height', '100%');
+        svg.onclick = handleClick;
+        running = false;
+      };
+
+      function handleClick(e) {
+        load(e.srcElement.attributes.id.value);
+      };
+      
+      
+    </script>
+  </body>
+</html>
